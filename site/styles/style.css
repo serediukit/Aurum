@@ -1,4 +1,51 @@
+:root {
+    --font-color: #000000;
+    --header-bg-color: #ebc152;
+    --header-bg-color-light: #f1d486;
+    --logo-size: 100px;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    background: linear-gradient(90deg, var(--header-bg-color) 0%, var(--header-bg-color-light) 50%, var(--header-bg-color) 100%);
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--logo-size);
+}
+
+.header-logo {
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+.menu {
+
+}
+
+a {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1.6px;
+    word-spacing: 6px;
+    color: var(--font-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+
+    margin-left: 30px;
+}
+
+.header-contacts {
+    height: 50px;
 }
