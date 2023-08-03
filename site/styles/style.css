@@ -188,6 +188,11 @@ p {
     font-family: var(--font-family);
     font-size: 26px;
     background: var(--silver-gradient);
+    transition-duration: 1s;
+}
+
+.appointment-button:hover {
+    background: var(--color-silver);
 }
 
 .appointment-link {
@@ -197,4 +202,55 @@ p {
 #map {
     height: 60vh;
     width: 100%;
+}
+
+footer {
+    background: var(--gold-gradient);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    height: var(--logo-size);
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-column {
+    margin: 10px 0px 10px 30px;
+}
+
+.footer-column-title {
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--color-black);
+    margin-bottom: 1vh;
+}
+
+.footer-column-cell {
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--color-brown);
+    margin-bottom: 0.5vh;
+}
+
+.silver-line {
+    height: 0.5vh;
+    width: 100%;
+    background: var(--silver-gradient);
+}
+
+.footer-copyright {
+    color: var(--color-brown);
+    text-align: center;
+    padding: 1vh 0px;
 }
