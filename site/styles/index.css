@@ -35,6 +35,8 @@
     color: var(--color-white);
     font-family: var(--font-family);
     font-size: 100px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     transition-duration: 1.5s;
 }
 
