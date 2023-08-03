@@ -5,7 +5,11 @@
     --color-gold: #ebc152;
     --color-gold-light: #f1d486;
     --color-gold-dark: #a57620;
+    --color-brown: #967b34;
+    --color-silver: #b9b5a6;
+    --color-silver-light: #d5d3ca;
     --gold-gradient: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold) 100%);
+    --silver-gradient: linear-gradient(90deg, var(--color-silver) 0%, var(--color-silver-light) 50%, var(--color-silver) 100%);
     --logo-size: 100px;
     --font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -154,4 +158,29 @@ p {
     height: 1vh;
     width: 100%;
     background: var(--gold-gradient);
+}
+
+.appointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: var(--gold-gradient);
+}
+
+.appointment-text {
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: 26px;
+}
+
+.appointment-button {
+    margin-left: 40%;
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: 26px;
+    background: var(--silver-gradient);
 }
