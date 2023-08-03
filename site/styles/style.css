@@ -193,3 +193,8 @@ p {
 .appointment-link {
     padding: 10px 50px;
 }
+
+#map {
+    height: 60vh;
+    width: 100%;
+}
