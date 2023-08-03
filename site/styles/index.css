@@ -1,0 +1,97 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #918b7c;
+    --color-gold: #ebc152;
+    --color-gold-light: #f1d486;
+    --color-gold-dark: #a57620;
+    --color-brown: #967b34;
+    --color-silver: #b9b5a6;
+    --color-silver-light: #d5d3ca;
+    --gold-gradient: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold) 100%);
+    --silver-gradient: linear-gradient(90deg, var(--color-silver) 0%, var(--color-silver-light) 50%, var(--color-silver) 100%);
+    --logo-size: 100px;
+    --font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.main-image-section {
+    position: relative;
+    text-align: center;
+}
+
+.main-image {
+    height: 80vh;
+    max-height: 80%;
+    min-height: 80%;
+    width: 100%;
+}
+
+.centered-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 100px;
+    transition-duration: 1.5s;
+}
+
+.centered-text:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.info-text {
+    padding: 10vh 5%;
+}
+
+.info-image {
+    width: 50%;
+}
+
+.appointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: var(--gold-gradient);
+}
+
+.appointment-text {
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: 26px;
+}
+
+.appointment-button {
+    margin-left: 40%;
+    padding: 10px 0px;
+    border-radius: 15px;
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: 26px;
+    background: var(--silver-gradient);
+    transition-duration: 1s;
+}
+
+.appointment-button:hover {
+    background: var(--color-silver);
+}
+
+.appointment-link {
+    padding: 10px 50px;
+}
+
+#map {
+    height: 60vh;
+    width: 100%;
+}
