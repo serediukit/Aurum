@@ -1,0 +1,41 @@
+@import "./normalize.css";
+@import "./root.css";
+
+.doctor-section {
+    margin: 5%;
+}
+
+.doctor-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10vh;
+}
+
+.doctor-info {
+    text-align: center;
+}
+
+.doctor-data-content {
+    display: flex;
+    text-align: left;
+    font-family: var(--font-family);
+    color: var(--color-gray);
+}
+
+.doctor-image-container {
+    margin-left: 50px;
+}
+
+.doctor-image {
+    width: 500px;
+}
+
+.doctor-certificates {
+    margin: 5%;
+}
+
+.certificates-gallery {
+    
+}
