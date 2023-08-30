@@ -1,0 +1,15 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #918b7c;
+    --color-gold: #ebc152;
+    --color-gold-light: #f1d486;
+    --color-gold-dark: #a57620;
+    --color-brown: #967b34;
+    --color-silver: #b9b5a6;
+    --color-silver-light: #d5d3ca;
+    --gold-gradient: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold) 100%);
+    --silver-gradient: linear-gradient(90deg, var(--color-silver) 0%, var(--color-silver-light) 50%, var(--color-silver) 100%);
+    --logo-size: 100px;
+    --font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
