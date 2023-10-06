@@ -20,7 +20,6 @@
 .doctor-data-content {
     display: flex;
     text-align: left;
-    font-family: var(--font-family);
     color: var(--color-gray);
 }
 
@@ -37,5 +36,15 @@
 }
 
 .certificates-gallery {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    margin: 20px;
+    width: 400px;
+    height: 225px;
 }

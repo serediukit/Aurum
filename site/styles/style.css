@@ -2,8 +2,10 @@
 @import "./root.css";
 
 body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 a {
@@ -12,7 +14,6 @@ a {
 }
 
 header {
-    background-color: var(--header-bg-color);
     background: var(--gold-gradient);
 }
 
@@ -30,7 +31,6 @@ header {
 }
 
 .menu a {
-    font-family: var(--font-family);
     font-size: 24px;
     letter-spacing: 1.6px;
     word-spacing: 6px;
@@ -75,7 +75,6 @@ i {
 
 .contact-info {
     margin-left: 10px;
-    font-family: var(--font-family);
 }
 
 .contact-main-info {
@@ -90,25 +89,21 @@ i {
 
 h1 {
     color: var(--color-gold-dark);
-    font-family: var(--font-family);
     font-size: 26px;
 }
 
 h2 {
     color: var(--color-black);
-    font-family: var(--font-family);
     font-size: 26px;
 }
 
 h3 {
     color: var(--color-black);
-    font-family: var(--font-family);
     font-size: 34px;
 }
 
 p {
     color: var(--color-black);
-    font-family: var(--font-family);
     font-size: 18px;
     text-align: justify;
 }
@@ -141,18 +136,16 @@ footer {
 }
 
 .footer-column {
-    margin: 10px 0px 10px 30px;
+    margin: 10px 0 10px 30px;
 }
 
 .footer-column-title {
-    font-family: var(--font-family);
     font-size: 18px;
     color: var(--color-black);
     margin-bottom: 1vh;
 }
 
 .footer-column-cell {
-    font-family: var(--font-family);
     font-size: 14px;
     color: var(--color-brown);
     margin-bottom: 0.5vh;
@@ -167,5 +160,5 @@ footer {
 .footer-copyright {
     color: var(--color-brown);
     text-align: center;
-    padding: 1vh 0px;
+    padding: 1vh 0;
 }
