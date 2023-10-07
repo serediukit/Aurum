@@ -2,10 +2,11 @@
 @import "./root.css";
 
 .main-image-section {
-    background-image: url("../img/main-photo.png");
+    background-image: url("../img/main-photo.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
     height: 80vh;
     max-height: 80%;
     min-height: 80%;

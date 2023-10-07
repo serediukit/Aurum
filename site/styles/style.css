@@ -91,6 +91,10 @@ i {
     color: var(--color-gray);
 }
 
+.instagram-link {
+    text-decoration: none;
+}
+
 h1 {
     color: var(--color-gold-dark);
     font-size: 26px;
