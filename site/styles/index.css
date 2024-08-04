@@ -80,3 +80,7 @@
     height: 60vh;
     width: 100%;
 }
+
+.not-align {
+    text-align: left;
+}

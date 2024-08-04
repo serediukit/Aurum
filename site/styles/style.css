@@ -49,7 +49,8 @@ header {
 }
 
 .menu a:hover {
-    background: var(--gold-gradient);
+    background: var(--color-gold);
+    transition-duration: 500ms;
 }
 
 .menu-bordered {
@@ -169,4 +170,8 @@ footer {
     color: var(--color-brown);
     text-align: center;
     padding: 1vh 0;
+}
+
+.main-info {
+    padding: 0 20%;
 }
