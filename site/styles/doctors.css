@@ -11,6 +11,7 @@
 .doctor-link {
     margin: 15px;
     width: 500px;
+    min-width: 500px;
 }
 
 .doctor {
