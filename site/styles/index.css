@@ -46,10 +46,9 @@
 
 .appointment {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 5vh 50vh;
     align-items: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
     background: var(--gold-gradient);
 }
 
@@ -59,7 +58,6 @@
 }
 
 .appointment-button {
-    margin-left: 40%;
     padding: 10px 0px;
     border-radius: 15px;
     color: var(--color-black);
