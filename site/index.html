@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/index.css" type="text/css">
 
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,17 +17,17 @@
 
 <!-- Navbar (sit on top) -->
 <div class="aurum-top">
-    <div class="aurum-bar aurum-white aurum-card" id="myNavbar">
-        <a href="#home" class="aurum-bar-item aurum-button aurum-wide">
+    <div class="aurum-white aurum-card" id="myNavbar">
+        <a href="#home" class="aurum-bar-item aurum-wide">
             <img class="aurum-logo" src="./img/logo.jpg" alt="Aurum">
         </a>
         <!-- Right-sided navbar links -->
         <div class="aurum-right aurum-hide-small">
-            <a href="#about" class="aurum-bar-item aurum-button">ABOUT</a>
-            <a href="#team" class="aurum-bar-item aurum-button"><i class="fa fa-user"></i> TEAM</a>
-            <a href="#work" class="aurum-bar-item aurum-button"><i class="fa fa-th"></i> WORK</a>
-            <a href="#pricing" class="aurum-bar-item aurum-button"><i class="fa fa-usd"></i> PRICING</a>
-            <a href="#contact" class="aurum-bar-item aurum-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#about" class="aurum-bar-item aurum-button">Про нас</a>
+            <a href="#team" class="aurum-bar-item aurum-button"><i class="fa fa-user-md"></i> Лікарі</a>
+            <a href="#pricing" class="aurum-bar-item aurum-button"><i class="fa fa-stethoscope"></i> Послуги</a>
+            <a href="#work" class="aurum-bar-item aurum-button"><i class="fa fa-th"></i> Галерея</a>
+            <a href="#contact" class="aurum-bar-item aurum-button"><i class="fa fa-envelope"></i> Контакти</a>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -38,9 +39,11 @@
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="aurum-sidebar aurum-bar-block aurum-black aurum-card aurum-animate-left aurum-hide-medium aurum-hide-large" style="display:none"
+<nav class="aurum-sidebar aurum-bar-block aurum-black aurum-card aurum-animate-left aurum-hide-medium aurum-hide-large"
+     style="display:none"
      id="mySidebar">
-    <a href="javascript:void(0)" onclick="aurum_close()" class="aurum-bar-item aurum-button aurum-large aurum-padding-16">Close ×</a>
+    <a href="javascript:void(0)" onclick="aurum_close()"
+       class="aurum-bar-item aurum-button aurum-large aurum-padding-16">Close ×</a>
     <a href="#about" onclick="aurum_close()" class="aurum-bar-item aurum-button">ABOUT</a>
     <a href="#team" onclick="aurum_close()" class="aurum-bar-item aurum-button">TEAM</a>
     <a href="#work" onclick="aurum_close()" class="aurum-bar-item aurum-button">WORK</a>
@@ -110,7 +113,8 @@
             <p><a href="#work" class="aurum-button aurum-black"><i class="fa fa-th"> </i> View Our Works</a></p>
         </div>
         <div class="aurum-col m6">
-            <img class="aurum-image aurum-round-large" src="/aurumimages/phone_buildings.jpg" alt="Buildings" width="700"
+            <img class="aurum-image aurum-round-large" src="/aurumimages/phone_buildings.jpg" alt="Buildings"
+                 width="700"
                  height="394">
         </div>
     </div>
@@ -130,7 +134,8 @@
                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
                         elementum.</p>
                     <p>
-                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact</button>
+                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact
+                        </button>
                     </p>
                 </div>
             </div>
@@ -144,7 +149,8 @@
                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
                         elementum.</p>
                     <p>
-                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact</button>
+                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact
+                        </button>
                     </p>
                 </div>
             </div>
@@ -158,7 +164,8 @@
                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
                         elementum.</p>
                     <p>
-                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact</button>
+                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact
+                        </button>
                     </p>
                 </div>
             </div>
@@ -172,7 +179,8 @@
                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
                         elementum.</p>
                     <p>
-                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact</button>
+                        <button class="aurum-button aurum-light-grey aurum-block"><i class="fa fa-envelope"></i> Contact
+                        </button>
                     </p>
                 </div>
             </div>
@@ -211,30 +219,36 @@
                  alt="A microphone">
         </div>
         <div class="aurum-col l3 m6">
-            <img src="/aurumimages/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"
+            <img src="/aurumimages/tech_phone.jpg" style="width:100%" onclick="onClick(this)"
+                 class="aurum-hover-opacity"
                  alt="A phone">
         </div>
         <div class="aurum-col l3 m6">
-            <img src="/aurumimages/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"
+            <img src="/aurumimages/tech_drone.jpg" style="width:100%" onclick="onClick(this)"
+                 class="aurum-hover-opacity"
                  alt="A drone">
         </div>
         <div class="aurum-col l3 m6">
-            <img src="/aurumimages/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"
+            <img src="/aurumimages/tech_sound.jpg" style="width:100%" onclick="onClick(this)"
+                 class="aurum-hover-opacity"
                  alt="Soundbox">
         </div>
     </div>
 
     <div class="aurum-row-padding aurum-section">
         <div class="aurum-col l3 m6">
-            <img src="/aurumimages/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"
+            <img src="/aurumimages/tech_tablet.jpg" style="width:100%" onclick="onClick(this)"
+                 class="aurum-hover-opacity"
                  alt="A tablet">
         </div>
         <div class="aurum-col l3 m6">
-            <img src="/aurumimages/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"
+            <img src="/aurumimages/tech_camera.jpg" style="width:100%" onclick="onClick(this)"
+                 class="aurum-hover-opacity"
                  alt="A camera">
         </div>
         <div class="aurum-col l3 m6">
-            <img src="/aurumimages/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"
+            <img src="/aurumimages/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)"
+                 class="aurum-hover-opacity"
                  alt="A typewriter">
         </div>
         <div class="aurum-col l3 m6">
@@ -246,7 +260,8 @@
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="aurum-modal aurum-black" onclick="this.style.display='none'">
-    <span class="aurum-button aurum-xxlarge aurum-black aurum-padding-large aurum-display-topright" title="Close Modal Image">×</span>
+    <span class="aurum-button aurum-xxlarge aurum-black aurum-padding-large aurum-display-topright"
+          title="Close Modal Image">×</span>
     <div class="aurum-modal-content aurum-animate-zoom aurum-center aurum-transparent aurum-padding-64">
         <img id="img01" class="aurum-image">
         <p id="caption" class="aurum-opacity aurum-large"></p>
@@ -363,7 +378,8 @@
 
 <!-- Footer -->
 <footer class="aurum-center aurum-black aurum-padding-64">
-    <a href="#home" class="aurum-button aurum-light-grey"><i class="fa fa-arrow-up aurum-margin-right"></i>To the top</a>
+    <a href="#home" class="aurum-button aurum-light-grey"><i class="fa fa-arrow-up aurum-margin-right"></i>To the
+        top</a>
     <div class="aurum-xlarge aurum-section">
         <i class="fa fa-facebook-official aurum-hover-opacity"></i>
         <i class="fa fa-instagram aurum-hover-opacity"></i>
@@ -376,32 +392,6 @@
                      class="aurum-hover-text-green">aurum.css</a></p>
 </footer>
 
-<script>
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function aurum_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-        } else {
-            mySidebar.style.display = 'block';
-        }
-    }
-
-    // Close the sidebar with the close button
-    function aurum_close() {
-        mySidebar.style.display = "none";
-    }
-</script>
-
+<script src="scripts/script.js"></script>
 </body>
 </html>
