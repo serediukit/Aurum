@@ -512,6 +512,7 @@ a {
 
 .aurum-bar .aurum-bar-item {
     padding: 8px 16px;
+    font-size: 18px;
     float: left;
     width: auto;
     border: none;
@@ -816,7 +817,7 @@ a {
     }
 }
 
-@media (min-width: 846px) {
+@media (min-width: 993px) {
     .aurum-modal-content {
         width: 900px
     }
@@ -830,7 +831,7 @@ a {
     }
 }
 
-@media (max-width: 845px) and (min-width: 601px) {
+@media (max-width: 992px) and (min-width: 601px) {
     .aurum-hide-medium {
         display: none !important
     }
