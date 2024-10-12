@@ -28,3 +28,10 @@ body, html {
 .aurum-bar .aurum-button {
     padding: 16px;
 }
+
+@media (hover: hover) {
+    .aurum-hover-gold:hover {
+        color: #000 !important;
+        background-color: #ebc152 !important
+    }
+}
