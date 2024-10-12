@@ -13,7 +13,6 @@ body, html {
 
 
 .aurum-logo {
-    width: var(--logo-size);
     height: var(--logo-size);
     padding: 8px;
 }
