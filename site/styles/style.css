@@ -327,7 +327,12 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    transition-duration: 0.5s;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .aurum-disabled, .aurum-btn:disabled, .aurum-button:disabled {

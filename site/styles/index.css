@@ -11,7 +11,7 @@ body, html {
 }
 
 
-.aurum-logo {
+.aurum-logo-img {
     height: var(--logo-size);
     padding: 8px;
 }
@@ -33,4 +33,19 @@ body, html {
         color: #000 !important;
         background-color: #ebc152 !important
     }
+}
+
+@media (max-width: 812px) {
+    #logo {
+        display: block; /* Для вирівнювання по центру */
+        text-align: center;
+    }
+
+    #navButton {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+    }
+
 }
