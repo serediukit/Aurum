@@ -10,6 +10,9 @@ body, html {
     line-height: 1.8;
 }
 
+a {
+    text-decoration: none;
+}
 
 .aurum-logo-img {
     height: var(--logo-size);
@@ -20,12 +23,16 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("../img/main-photo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/main-photo.jpg");
     min-height: 100%;
 }
 
 .aurum-bar .aurum-button {
     padding: 16px;
+}
+
+.aurum-text-shadow {
+    text-shadow: #2c2c36 2px 0 5px
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -35,7 +42,7 @@ body, html {
     }
 }
 
-@media (max-width: 812px) {
+@media (max-width: 845px) {
     #logo {
         display: block; /* Для вирівнювання по центру */
         text-align: center;

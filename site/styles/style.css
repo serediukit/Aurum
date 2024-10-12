@@ -816,7 +816,7 @@ a {
     }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 846px) {
     .aurum-modal-content {
         width: 900px
     }
@@ -830,7 +830,7 @@ a {
     }
 }
 
-@media (max-width: 812px) and (min-width: 601px) {
+@media (max-width: 845px) and (min-width: 601px) {
     .aurum-hide-medium {
         display: none !important
     }
@@ -1152,7 +1152,7 @@ a {
 }
 
 .aurum-opacity, .aurum-hover-opacity:hover {
-    opacity: 0.60
+    opacity: 0.75
 }
 
 .aurum-opacity-off, .aurum-hover-opacity-off:hover {
