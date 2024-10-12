@@ -1,4 +1,4 @@
-@import "./normalize.css";
+/*@import "./normalize.css";*/
 @import "./root.css";
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -27,4 +27,8 @@ body, html {
 
 .aurum-bar .aurum-button {
     padding: 16px;
+}
+
+.aurum-hover-transition {
+    transition-duration: 0.5s;
 }

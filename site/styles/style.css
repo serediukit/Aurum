@@ -310,7 +310,7 @@ a {
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    background-color: inherit;
+    background-color: transparent;
     text-align: center;
     cursor: pointer;
     white-space: nowrap
@@ -810,7 +810,7 @@ a {
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 813px) {
     .aurum-modal-content {
         width: 900px
     }
@@ -824,7 +824,7 @@ a {
     }
 }
 
-@media (max-width: 992px) and (min-width: 601px) {
+@media (max-width: 812px) and (min-width: 601px) {
     .aurum-hide-medium {
         display: none !important
     }
@@ -1501,6 +1501,11 @@ a {
 .aurum-dark-grey, .aurum-hover-dark-grey:hover, .aurum-dark-gray, .aurum-hover-dark-gray:hover {
     color: #fff !important;
     background-color: #616161 !important
+}
+
+.aurum-gold, .aurum-hover-gold:hover {
+    color: #000 !important;
+    background-color: #ebc152 !important
 }
 
 .aurum-pale-red, .aurum-hover-pale-red:hover {

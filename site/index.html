@@ -22,34 +22,30 @@
             <img class="aurum-logo" src="./img/logo-wide.jpg" alt="Aurum">
         </a>
         <!-- Right-sided navbar links -->
-        <div class="aurum-right aurum-hide-small">
-            <a href="#about" class="aurum-bar-item aurum-button">Про нас</a>
-            <a href="#team" class="aurum-bar-item aurum-button"><i class="fa fa-user-md"></i> Лікарі</a>
-            <a href="#pricing" class="aurum-bar-item aurum-button"><i class="fa fa-stethoscope"></i> Послуги</a>
-            <a href="#work" class="aurum-bar-item aurum-button"><i class="fa fa-th"></i> Галерея</a>
-            <a href="#contact" class="aurum-bar-item aurum-button"><i class="fa fa-envelope"></i> Контакти</a>
+        <div class="aurum-right aurum-hide-medium">
+            <a href="#about" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition">Про нас</a>
+            <a href="#doctors" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition"><i class="fa fa-user-md"></i> Лікарі</a>
+            <a href="#pricing" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition"><i class="fa fa-stethoscope"></i>
+                Послуги</a>
+            <a href="#gallery" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition"><i class="fa fa-th"></i> Галерея</a>
+            <a href="#contact" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition"><i class="fa fa-envelope"></i>
+                Контакти</a>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="aurum-bar-item aurum-button aurum-right aurum-hide-large aurum-hide-medium"
-           onclick="aurum_open()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a class="aurum-bar-item aurum-button aurum-hide-large aurum-right aurum-padding-large aurum-hover-gold aurum-hover-transition"
+           href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+
+        <div id="navHide" class="aurum-bar-block aurum-white aurum-hide aurum-hide-large aurum-large">
+            <a href="#about" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition">Про нас</a>
+            <a href="#doctors" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition">Лікарі</a>
+            <a href="#pricing" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition">Послуги</a>
+            <a href="#gallery" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition">Галерея</a>
+            <a href="#contact" class="aurum-bar-item aurum-button aurum-padding-large aurum-hover-gold aurum-hover-transition">Контакти</a>
+        </div>
     </div>
 </div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="aurum-sidebar aurum-bar-block aurum-black aurum-card aurum-animate-left aurum-hide-medium aurum-hide-large"
-     style="display:none"
-     id="mySidebar">
-    <a href="javascript:void(0)" onclick="aurum_close()"
-       class="aurum-bar-item aurum-button aurum-large aurum-padding-16">Close ×</a>
-    <a href="#about" onclick="aurum_close()" class="aurum-bar-item aurum-button">ABOUT</a>
-    <a href="#team" onclick="aurum_close()" class="aurum-bar-item aurum-button">TEAM</a>
-    <a href="#work" onclick="aurum_close()" class="aurum-bar-item aurum-button">WORK</a>
-    <a href="#pricing" onclick="aurum_close()" class="aurum-bar-item aurum-button">PRICING</a>
-    <a href="#contact" onclick="aurum_close()" class="aurum-bar-item aurum-button">CONTACT</a>
-</nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 aurum-display-container aurum-grayscale-min" id="home">
@@ -388,8 +384,6 @@
         <i class="fa fa-twitter aurum-hover-opacity"></i>
         <i class="fa fa-linkedin aurum-hover-opacity"></i>
     </div>
-    <p>Powered by <a href="https://www.aurumschools.com/aurumcss/default.asp" title="aurum.CSS" target="_blank"
-                     class="aurum-hover-text-green">aurum.css</a></p>
 </footer>
 
 <script src="scripts/script.js"></script>

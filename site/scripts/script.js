@@ -7,18 +7,11 @@ function onClick(element) {
 }
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function aurum_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
+function myFunction() {
+    var x = document.getElementById("navHide");
+    if (x.className.indexOf("aurum-show") === -1) {
+        x.className += " aurum-show";
     } else {
-        mySidebar.style.display = 'block';
+        x.className = x.className.replace(" aurum-show", "");
     }
-}
-
-// Close the sidebar with the close button
-function aurum_close() {
-    mySidebar.style.display = "none";
 }
