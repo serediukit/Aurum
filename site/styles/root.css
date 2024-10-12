@@ -22,5 +22,5 @@
     --color-silver-light: #d5d3ca;
     --gold-gradient: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold) 100%);
     --silver-gradient: linear-gradient(90deg, var(--color-silver) 0%, var(--color-silver-light) 50%, var(--color-silver) 100%);
-    --logo-size: 50px;
+    --logo-size: 51px;
 }

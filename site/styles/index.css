@@ -13,7 +13,7 @@ body, html {
 
 .aurum-logo-img {
     height: var(--logo-size);
-    padding: 8px;
+    padding: 5px;
 }
 
 /* Full height image header */
