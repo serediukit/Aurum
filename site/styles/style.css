@@ -326,7 +326,8 @@ a {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+    transition-duration: 0.5s;
 }
 
 .aurum-disabled, .aurum-btn:disabled, .aurum-button:disabled {

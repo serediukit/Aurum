@@ -28,7 +28,3 @@ body, html {
 .aurum-bar .aurum-button {
     padding: 16px;
 }
-
-.aurum-hover-transition {
-    transition-duration: 0.5s;
-}
