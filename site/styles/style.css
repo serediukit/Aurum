@@ -1360,11 +1360,6 @@ a {
     float: right !important
 }
 
-.aurum-button:hover {
-    color: #000 !important;
-    background-color: #ccc !important
-}
-
 .aurum-transparent, .aurum-hover-none:hover {
     background-color: transparent !important
 }
