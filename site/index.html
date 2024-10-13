@@ -49,7 +49,7 @@
         </div>
 
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-        <a class="aurum-bar-item aurum-button aurum-hide-large aurum-right aurum-text-large aurum-padding-large aurum-hover-gold" href="javascript:void(0);" onclick="myFunction()"
+        <a class="aurum-bar-item aurum-button aurum-hide-large aurum-right aurum-text-large aurum-padding-large aurum-hover-gold" href="javascript:void(0);" onclick="showHideNavigation()"
            title="Toggle Navigation Menu"
            id="navButton">
             <i class="fa fa-bars"></i>
@@ -57,19 +57,19 @@
 
         <!-- Hidden vertical navbar -->
         <div id="navHide" class="aurum-bar-block aurum-white aurum-hide aurum-hide-large aurum-large">
-            <a href="#about" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="myFunction()">
+            <a href="#about" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="showHideNavigation()">
                 Про нас
             </a>
-            <a href="#doctors" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="myFunction()">
+            <a href="#doctors" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="showHideNavigation()">
                 Лікарі
             </a>
-            <a href="#pricing" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="myFunction()">
+            <a href="#pricing" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="showHideNavigation()">
                 Послуги
             </a>
-            <a href="#gallery" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="myFunction()">
+            <a href="#gallery" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="showHideNavigation()">
                 Галерея
             </a>
-            <a href="#contact" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="myFunction()">
+            <a href="#contact" class="aurum-bar-item aurum-button aurum-text-large aurum-center aurum-hover-gold" onclick="showHideNavigation()">
                 Контакти
             </a>
         </div>
@@ -139,17 +139,19 @@
 <!-- Promo Section - "We know design" -->
 <div class="aurum-container aurum-light-grey" style="padding:128px 16px">
     <div class="aurum-row-padding">
-        <div class="aurum-col m6">
-            <h3>We know design.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et
-                dolore.</p>
-            <p><a href="#work" class="aurum-button aurum-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+        <div class="aurum-col l6 aurum-center">
+            <h3 style="font-weight: bold">Чому Вам потрібно обрати саме нас?</h3>
+            <p class="aurum-large" style="max-width: 550px; margin: 0 auto">
+                У діагностиці та лікуванні захворювань користуємось лише клінічними рекомендаціями та міжнародними протоколами, ефективність та результативність яких перевірена численними дослідженнями.
+            </p>
+            <p>
+                <a href="#appointment" class="aurum-button aurum-black aurum-hover-gold" style="margin: 12px 0">
+                    <i class="fa-regular fa-calendar-check"></i>
+                     Записатись на прийом
+                </a>
+            </p>
         </div>
-        <div class="aurum-col m6">
-            <img class="aurum-image aurum-round-large" src="/aurumimages/phone_buildings.jpg" alt="Buildings"
-                 width="700"
-                 height="394">
-        </div>
+        <img class= "aurum-image aurum-round-large" src="./img/section.jpg" alt="Наша команда" style="max-height: 400px; padding-left: 24px">
     </div>
 </div>
 
@@ -385,7 +387,7 @@
 <!--</div>-->
 
 <!--&lt;!&ndash; Contact Section &ndash;&gt;-->
-<!--<div class="aurum-container aurum-light-grey" style="padding:128px 16px" id="contact">-->
+<!--<div class="aurum-container aurum-light-grey" style="padding:128px 16px" id="appointment">-->
 <!--    <h3 class="aurum-center">CONTACT</h3>-->
 <!--    <p class="aurum-center aurum-large">Lets get in touch. Send us a message:</p>-->
 <!--    <div style="margin-top:48px">-->

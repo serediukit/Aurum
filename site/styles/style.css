@@ -562,7 +562,6 @@ a {
 }
 
 .aurum-col, .aurum-half, .aurum-third, .aurum-twothird, .aurum-threequarter, .aurum-quarter {
-    float: left;
     width: 100%
 }
 
