@@ -88,8 +88,17 @@ a {
     justify-content: center;
 }
 
+#team-photo {
+    margin-left: 24px;
+    max-height: 400px;
+}
+
 @media (max-width: 992px) {
     .aurum-row-padding {
         flex-direction: column;
+    }
+
+    #team-photo {
+        margin-left: 0px;
     }
 }
