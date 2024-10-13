@@ -102,3 +102,9 @@ a {
         margin-left: 0px;
     }
 }
+
+@media (max-width: 1340px) {
+    .aurum-doctor-name {
+        max-lines: 1;
+    }
+}
