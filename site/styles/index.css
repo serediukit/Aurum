@@ -76,14 +76,8 @@ a {
     }
 }
 
-/*.fa-stethoscope {*/
-/*    color: #e74c3c; !* Червоний для стетоскопа *!*/
-/*}*/
-
-/*.fa-microscope {*/
-/*    color: #2ecc71; !* Зелений для мікроскопа *!*/
-/*}*/
-
-/*.fa-pills {*/
-/*    color: #f39c12; !* Жовтий для пігулок *!*/
-/*}*/
+.aurum-text-width-third {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 18px 0;
+}
