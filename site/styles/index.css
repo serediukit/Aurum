@@ -109,10 +109,6 @@ a {
         align-items: stretch;
     }
 
-    .aurum-col.l3.m5 {
-        min-width: 290px;
-    }
-
     .aurum-card-doctor {
         display: flex;
         flex-direction: column;
@@ -134,7 +130,11 @@ a {
     }
 }
 
-
+@media (min-width: 993px) {
+    .aurum-col.l3 {
+        min-width: 446px;
+    }
+}
 
 /*@media (max-width: 1340px) {*/
 /*    .aurum-doctor-name {*/
