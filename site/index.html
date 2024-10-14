@@ -159,7 +159,7 @@
 <div class="aurum-container" style="padding:128px 16px" id="doctors">
     <h3 class="aurum-center" style="font-weight: bold">НАШІ ЛІКАРІ</h3>
     <div class="aurum-row-padding" style="margin-top:64px" id="doctors-rows">
-        <div class="aurum-col l3 aurum-margin-bottom">
+        <div class="aurum-col l3 aurum-margin-bottom aurum-doctor-card">
             <div class="aurum-card aurum-card-doctor" style="height: 100%">
                 <img src="./img/doctor/doctor1.jpg" alt="Анатолій Володимирович" style="width:100%">
                 <div class="aurum-container aurum-container-doctor">
@@ -178,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="aurum-col l3 aurum-margin-bottom">
+        <div class="aurum-col l3 aurum-margin-bottom aurum-doctor-card">
             <div class="aurum-card aurum-card-doctor" style="height: 100%">
                 <img src="./img/doctor/doctor2.jpg" alt="Наталія Василівна" style="width:100%">
                 <div class="aurum-container aurum-container-doctor">
@@ -220,92 +220,77 @@
     </div>
 </div>
 
-<!--&lt;!&ndash; Work Section &ndash;&gt;-->
-<!--<div class="aurum-container" style="padding:128px 16px" id="gallery">-->
-<!--    <h3 class="aurum-center">OUR WORK</h3>-->
-<!--    <p class="aurum-center aurum-large">What we've done for people</p>-->
+<!-- Work Section -->
+<div class="aurum-container" style="padding:128px 16px" id="gallery">
+    <h3 class="aurum-center" style="font-weight: bold">ГАЛЕРЕЯ</h3>
+    <p class="aurum-center aurum-large">Тут Ви можете познайомитись із нами трішки ближче.</p>
 
-<!--    <div class="aurum-row-padding" style="margin-top:64px">-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="aurum-hover-opacity"-->
-<!--                 alt="A microphone">-->
-<!--        </div>-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_phone.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity"-->
-<!--                 alt="A phone">-->
-<!--        </div>-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_drone.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity"-->
-<!--                 alt="A drone">-->
-<!--        </div>-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_sound.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity"-->
-<!--                 alt="Soundbox">-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="aurum-row-padding" style="margin-top:64px">
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+    </div>
 
-<!--    <div class="aurum-row-padding aurum-section">-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_tablet.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity"-->
-<!--                 alt="A tablet">-->
-<!--        </div>-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_camera.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity"-->
-<!--                 alt="A camera">-->
-<!--        </div>-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity"-->
-<!--                 alt="A typewriter">-->
-<!--        </div>-->
-<!--        <div class="aurum-col l3 m6">-->
-<!--            <img src="/aurumimages/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)"-->
-<!--                 class="aurum-hover-opacity" alt="A tableturner">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+    <div class="aurum-row-padding aurum-section">
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+    </div>
 
-<!--&lt;!&ndash; Modal for full size images on click&ndash;&gt;-->
-<!--<div id="modal01" class="aurum-modal aurum-black" onclick="this.style.display='none'">-->
-<!--    <span class="aurum-button aurum-xxlarge aurum-black aurum-padding-large aurum-display-topright"-->
-<!--          title="Close Modal Image">×</span>-->
-<!--    <div class="aurum-modal-content aurum-animate-zoom aurum-center aurum-transparent aurum-padding-64">-->
-<!--        <img id="img01" class="aurum-image">-->
-<!--        <p id="caption" class="aurum-opacity aurum-large"></p>-->
-<!--    </div>-->
-<!--</div>-->
+    <div class="aurum-row-padding aurum-section">
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+        <div class="aurum-col l3 m6 s6">
+            <img src="./img/gallery/gallery4.JPG" onclick="onClick(this)"
+                 class="aurum-hover-opacity aurum-image-gallery">
+        </div>
+    </div>
+</div>
 
-<!--&lt;!&ndash; Skills Section &ndash;&gt;-->
-<!--<div class="aurum-container aurum-light-grey aurum-padding-64">-->
-<!--    <div class="aurum-row-padding">-->
-<!--        <div class="aurum-col m6">-->
-<!--            <h3>Our Skills.</h3>-->
-<!--            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>-->
-<!--                tempor incididunt ut labore et dolore.</p>-->
-<!--            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>-->
-<!--                tempor incididunt ut labore et dolore.</p>-->
-<!--        </div>-->
-<!--        <div class="aurum-col m6">-->
-<!--            <p class="aurum-wide"><i class="fa fa-camera aurum-margin-right"></i>Photography</p>-->
-<!--            <div class="aurum-grey">-->
-<!--                <div class="aurum-container aurum-dark-grey aurum-center" style="width:90%">90%</div>-->
-<!--            </div>-->
-<!--            <p class="aurum-wide"><i class="fa fa-desktop aurum-margin-right"></i>Web Design</p>-->
-<!--            <div class="aurum-grey">-->
-<!--                <div class="aurum-container aurum-dark-grey aurum-center" style="width:85%">85%</div>-->
-<!--            </div>-->
-<!--            <p class="aurum-wide"><i class="fa fa-photo aurum-margin-right"></i>Photoshop</p>-->
-<!--            <div class="aurum-grey">-->
-<!--                <div class="aurum-container aurum-dark-grey aurum-center" style="width:75%">75%</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<!-- Modal for full size images on click-->
+<div id="gallery-view" class="aurum-modal aurum-black" onclick="this.style.display='none'" style="padding: 0;">
+    <span class="aurum-button aurum-xxlarge aurum-black aurum-padding-large aurum-display-topright"
+          title="Close image">×</span>
+    <div class="aurum-modal-content aurum-animate-zoom aurum-center aurum-transparent aurum-padding-64" style="height: 100%" id="image-view-back">
+        <img id="image-view" class="aurum-image" style="max-height: 95%" alt="Image view">
+    </div>
+</div>
 
 <!--&lt;!&ndash; Pricing Section &ndash;&gt;-->
 <!--<div class="aurum-container aurum-center aurum-dark-grey" style="padding:128px 16px" id="pricing">-->
@@ -384,7 +369,7 @@
 <!--            </p>-->
 <!--        </form>-->
 <!--        &lt;!&ndash; Image of location/map &ndash;&gt;-->
-<!--        <img src="/aurumimages/map.jpg" class="aurum-image aurum-greyscale" style="width:100%;margin-top:48px">-->
+<!--        <img src="./img/map.jpg" class="aurum-image aurum-greyscale" style="width:100%;margin-top:48px">-->
 <!--    </div>-->
 <!--</div>-->
 

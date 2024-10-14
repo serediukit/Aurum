@@ -562,6 +562,7 @@ a {
 }
 
 .aurum-col, .aurum-half, .aurum-third, .aurum-twothird, .aurum-threequarter, .aurum-quarter {
+    float: left;
     width: 100%
 }
 
@@ -780,10 +781,6 @@ a {
         width: auto !important
     }
 
-    .aurum-modal {
-        padding-top: 30px
-    }
-
     .aurum-dropdown-hover.aurum-mobile .aurum-dropdown-content, .aurum-dropdown-click.aurum-mobile .aurum-dropdown-content {
         position: relative
     }
@@ -809,10 +806,6 @@ a {
 @media (max-width: 768px) {
     .aurum-modal-content {
         width: 500px
-    }
-
-    .aurum-modal {
-        padding-top: 50px
     }
 }
 

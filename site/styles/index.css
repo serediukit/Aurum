@@ -129,19 +129,33 @@ a {
         margin-top: 0;
     }
 
-    #statistics-list {
+    #statistics-list, #gallery-list {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 }
 
 @media (min-width: 993px) {
-    .aurum-col.l3 {
+    .aurum-doctor-card {
         min-width: 446px;
     }
 }
 
 .aurum-digit-font {
     font-family: "Gill Sans", Arial, sans-serif;
+}
+
+#image-view-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aurum-image-gallery {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
