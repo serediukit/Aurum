@@ -174,14 +174,15 @@ a {
     border-bottom-color: var(--color-black);
     border-bottom-width: 1px;
     border-bottom-style: dashed;
+    margin: 2em 1em;
 }
 
 .aurum-item-text {
-    margin-bottom: 0;
+    margin: 0;
     text-align: left;
 }
 
 .aurum-item-price {
-    margin-bottom: 0;
-    padding-left: 12px;
+    margin: 0;
+    padding-left: 1em;
 }
