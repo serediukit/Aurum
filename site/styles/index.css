@@ -176,6 +176,12 @@ a {
     border-bottom-style: dashed;
 }
 
-.aurum-item-text, .aurum-item-price {
+.aurum-item-text {
     margin-bottom: 0;
+    text-align: left;
+}
+
+.aurum-item-price {
+    margin-bottom: 0;
+    padding-left: 12px;
 }
