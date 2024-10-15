@@ -82,10 +82,14 @@ a {
     padding: 18px 0;
 }
 
-#about-list, #advertisement-list, #doctors-rows {
+#about-list, #advertisement-list, #doctors-rows, #pricing-rows {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#pricing-rows {
+    align-items: stretch;
 }
 
 #team-photo {
@@ -141,6 +145,10 @@ a {
     .aurum-doctor-card {
         min-width: 446px;
     }
+
+    .aurum-price-card {
+        min-width: 44%;
+    }
 }
 
 .aurum-digit-font {
@@ -158,4 +166,16 @@ a {
     height: auto;
     object-fit: cover;
     display: block;
+}
+
+.aurum-pricing-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-color: var(--color-black);
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+.aurum-item-text, .aurum-item-price {
+    margin-bottom: 0;
 }
