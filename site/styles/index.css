@@ -12,6 +12,12 @@ body, html {
     scroll-behavior: smooth !important;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+    body, html {
+        scroll-behavior: auto;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -167,6 +173,7 @@ a {
     height: auto;
     object-fit: cover;
     display: block;
+    aspect-ratio: 1/1
 }
 
 .aurum-pricing-item {
