@@ -89,7 +89,7 @@ a {
     padding: 18px 0;
 }
 
-#about-list, #advertisement-list, #doctors-rows, #pricing-rows {
+#about-list, #advertisement-list, #doctors-rows, #pricing-rows, #contacts-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,4 +193,46 @@ a {
 .aurum-item-price {
     margin: 0;
     padding-left: 1em;
+}
+
+.contacts-list-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts-list {
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (min-width: 1283px) {
+    .contacts-list-col {
+        flex-direction: row;
+    }
+
+    .aurum-contact {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 656px) {
+    #contacts-list {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 657px) {
+    .aurum-contact {
+        height: 136px;
+    }
+}
+
+.aurum-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1em;
+    width: 276px;
 }

@@ -354,7 +354,7 @@
     </div>
 </div>
 
-<!-- Modal for full size images on click-->
+<!-- Modal for full size images on click -->
 <div id="gallery-view" class="aurum-modal aurum-black" onclick="this.style.display='none'" style="padding: 0;">
     <span class="aurum-button aurum-xxlarge aurum-black aurum-padding-large aurum-display-topright"
           title="Close image">×</span>
@@ -364,32 +364,63 @@
 </div>
 
 <!-- Contact Section -->
-<!--<div class="aurum-container aurum-light-grey" style="padding:128px 16px" id="appointment">-->
-<!--    <h3 class="aurum-center">CONTACT</h3>-->
-<!--    <p class="aurum-center aurum-large">Lets get in touch. Send us a message:</p>-->
-<!--    <div style="margin-top:48px">-->
-<!--        <p><i class="fa fa-map-marker fa-fw aurum-xxlarge aurum-margin-right"></i> Chicago, US</p>-->
-<!--        <p><i class="fa fa-phone fa-fw aurum-xxlarge aurum-margin-right"></i> Phone: +00 151515</p>-->
-<!--        <p><i class="fa fa-envelope fa-fw aurum-xxlarge aurum-margin-right"> </i> Email: mail@mail.com</p>-->
-<!--        <br>-->
-<!--        <form action="/action_page.php" target="_blank">-->
-<!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Name" required name="Name"></p>-->
-<!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Email" required name="Email"></p>-->
-<!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Subject" required name="Subject"></p>-->
-<!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Message" required name="Message"></p>-->
-<!--            <p>-->
-<!--                <button class="aurum-button aurum-black" type="submit">-->
-<!--                    <i class="fa fa-paper-plane"></i> SEND MESSAGE-->
-<!--                </button>-->
-<!--            </p>-->
-<!--        </form>-->
-<!--        &lt;!&ndash; Image of location/map &ndash;&gt;-->
-<!--        <img src="./img/map.jpg" class="aurum-image aurum-greyscale" style="width:100%;margin-top:48px">-->
-<!--    </div>-->
-<!--</div>-->
+<div class="aurum-container aurum-light-grey" style="padding:128px 16px" id="appointment">
+    <h3 class="aurum-center" style="font-weight: bold">КОНТАКИ</h3>
+    <p class="aurum-center aurum-large">Очікуємо на Вас</p>
+    <div class="aurum-row-padding aurum-center" id="contacts-list">
+        <div class="contacts-list-col">
+            <div class="aurum-contact">
+                <i class="fa fa-location-dot aurum-center aurum-large" style="margin-right: 1em; width: 18px"></i>
+                <p class="aurum-large" style="text-align: left">
+                    <a href="#location">
+                        вул.Князів Коріатовичів 25Е<br>
+                        м.Кам'янець-Подільський.
+                    </a>
+                </p>
+            </div>
+            <div class="aurum-contact">
+                <i class="fa fa-phone aurum-center aurum-large" style="margin-right: 1em; width: 18px"></i>
+                <p class="aurum-large aurum-digit-font" style="text-align: left">
+                    +38(067)937-20-20
+                </p>
+            </div>
+        </div>
+        <div class="contacts-list-col">
+            <div class="aurum-contact">
+                <i class="fa-regular fa-clock aurum-center aurum-large" style="margin-right: 1em; width: 18px"></i>
+                <p class="aurum-large" style="text-align: left">
+                    Пн-Пт: <span class="aurum-digit-font">09:00 - 18:00</span><br>
+                    Сб: за попереднім записом <br>
+                    Нд: вихідний
+                </p>
+            </div>
+            <div class="aurum-contact">
+                <i class="fa-brands fa-instagram aurum-center aurum-large" style="margin-right: 1em; width: 18px"></i>
+                <p class="aurum-large" style="text-align: left">
+                    <a href="https://www.instagram.com/aurum.medical.center/">
+                        @aurum.medical.center
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--        <form action="/action_page.php" target="_blank">-->
+    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Name" required name="Name"></p>-->
+    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Email" required name="Email"></p>-->
+    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Subject" required name="Subject"></p>-->
+    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Message" required name="Message"></p>-->
+    <!--            <p>-->
+    <!--                <button class="aurum-button aurum-black" type="submit">-->
+    <!--                    <i class="fa fa-paper-plane"></i> SEND MESSAGE-->
+    <!--                </button>-->
+    <!--            </p>-->
+    <!--        </form>-->
+    <!--    </div>-->
+</div>
 
 <!-- Map Section -->
-<div class="aurum-container aurum-white" style="padding: 0">
+<div class="aurum-container aurum-white" style="padding: 0" id="location">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896.2629356326896!2d26.604168968279815!3d48.67608569123373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b9001dca22c7%3A0xe70817c7d8be026a!2z0JzQtdC00LjRh9C90LjQuSDRhtC10L3RgtGAIEF1cnVt!5e0!3m2!1suk!2sua!4v1729415198989!5m2!1suk!2sua"
             style="width:100%; min-height: 360px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
