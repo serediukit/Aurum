@@ -19,9 +19,10 @@ phoneInput.addEventListener('click', () => {
 });
 
 const phonePattern = /^\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/;
-let lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
-let currentTime = new Date().getTime();
-const fiveMinutes = 5 * 60 * 1000;
+const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+const currentTime = new Date().getTime();
+// const fiveMinutes = 5 * 60 * 1000;
+const fiveMinutes = 30 * 1000;
 
 if (lastSubmissionTime && (currentTime - lastSubmissionTime) < fiveMinutes) {
     disableForm();
@@ -57,7 +58,7 @@ form.addEventListener('submit', e => {
 });
 
 function disableForm() {
-    phoneInput.disabled = true;
+    phoneInput.setAttribute('disabled', true);
     formText.innerText = 'Зачекайте 5 хвилин, щоб відправити ще раз. Дякуємо за розуміння ✨';
     submitBtn.style.display = 'none';
 };
