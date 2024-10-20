@@ -18,13 +18,19 @@ phoneInput.addEventListener('click', () => {
     phoneInput.value = '';
 });
 
+const phonePattern = /^\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/;
+
 // Додаємо подію для очищення форми після відправки
 const form = document.getElementById('phone-form');
 form.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(form);
 
-    let phone = phoneInput.value;
+    let phoneValue = phoneInput.value;
+    if (!phonePattern.test(phoneValue)) {
+        alert("Будь ласка, введіть коректний номер телефону.");
+        return;
+    }
 
     submitBtn = document.getElementById("submit-btn");
 

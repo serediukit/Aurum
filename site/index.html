@@ -411,7 +411,7 @@
     <form id="phone-form" name="phone-form" data-netlify="true" data-netlify-honeypot="bot-field" action="#" netlify>
         <input type="hidden" name="bot-field">
         <label for="phone"></label>
-        <input class="aurum-input aurum-border aurum-large aurum-digit-font" placeholder="+38 (___) ___-____" type="tel" id="phone" name="phone" required>
+        <input class="aurum-input aurum-border aurum-large aurum-digit-font" placeholder="+38 (___) ___-__-__" type="tel" id="phone" name="phone" required>
         <button class="aurum-button aurum-black aurum-large aurum-hover-gold" type="submit" id="submit-btn" style="margin-top: 0.5em">
             <i class="fa fa-phone" style="margin-right: 0.5em"></i>Перетелефонуйте мені
         </button>
@@ -439,5 +439,11 @@
 </footer>
 
 <script src="scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+<script>
+    const phoneMask = new Inputmask("+38 (099) 999-99-99");
+    phoneMask.mask(phoneInput);
+</script>
+
 </body>
 </html>
