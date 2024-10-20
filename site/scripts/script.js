@@ -1,3 +1,18 @@
+function disableForm() {
+    phoneInput.disabled = true;
+    formText.innerText = 'Зачекайте 5 хвилин, щоб відправити ще раз. Дякуємо за розуміння ✨';
+    submitBtn.style.display = 'none';
+};
+
+const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+let currentTime = new Date().getTime();
+// const fiveMinutes = 5 * 60 * 1000;
+const fiveMinutes = 30 * 1000;
+
+if (lastSubmissionTime && (currentTime - lastSubmissionTime) < fiveMinutes) {
+    disableForm();
+}
+
 function showHideNavigation() {
     var x = document.getElementById("navHide");
     if (x.className.indexOf("aurum-show") === -1) {
@@ -19,10 +34,6 @@ phoneInput.addEventListener('click', () => {
 });
 
 const phonePattern = /^\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/;
-const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
-const currentTime = new Date().getTime();
-// const fiveMinutes = 5 * 60 * 1000;
-const fiveMinutes = 30 * 1000;
 
 let formText = document.getElementById('form-text');
 let submitBtn = document.getElementById("submit-btn");
@@ -31,6 +42,8 @@ let submitBtn = document.getElementById("submit-btn");
 const form = document.getElementById('phone-form');
 form.addEventListener('submit', e => {
     e.preventDefault();
+
+    currentTime = new Date().getTime();
 
     if (lastSubmissionTime && (currentTime - lastSubmissionTime) < fiveMinutes) {
         disableForm();
@@ -51,16 +64,10 @@ form.addEventListener('submit', e => {
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            localStorage.setItem('lastSubmissionTime', new Date().getTime());
+            localStorage.setItem('lastSubmissionTime', currentTime);
             phoneInput.disabled = true;
             formText.innerText = 'Дякуємо. Ми Вам зателефонуємо як тільки зможемо ✨';
             submitBtn.style.display = 'none';
         })
         .catch((error) => console.log('Sending form failed'));
 });
-
-function disableForm() {
-    phoneInput.disabled = true;
-    formText.innerText = 'Зачекайте 5 хвилин, щоб відправити ще раз. Дякуємо за розуміння ✨';
-    submitBtn.style.display = 'none';
-};
