@@ -24,7 +24,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(form);
 
-    submitBtn = getElementById("submit-btn");
+    submitBtn = document.getElementById("submit-btn");
     submitBtn.setAttribute('disabled', true);
 
     if (userEmailField?.value?.length > 30) {
