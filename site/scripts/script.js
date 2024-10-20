@@ -1,3 +1,7 @@
+const phoneInput = document.getElementById('phone');
+let formText = document.getElementById('form-text');
+let submitBtn = document.getElementById("submit-btn");
+
 function disableForm() {
     phoneInput.disabled = true;
     formText.innerText = 'Зачекайте 5 хвилин, щоб відправити ще раз. Дякуємо за розуміння ✨';
@@ -28,15 +32,11 @@ function onClick(element) {
 }
 
 // Очищує поле при натисканні на нього
-const phoneInput = document.getElementById('phone');
 phoneInput.addEventListener('click', () => {
     phoneInput.value = '';
 });
 
 const phonePattern = /^\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/;
-
-let formText = document.getElementById('form-text');
-let submitBtn = document.getElementById("submit-btn");
 
 // Додаємо подію для очищення форми після відправки
 const form = document.getElementById('phone-form');
@@ -66,7 +66,7 @@ form.addEventListener('submit', e => {
         .then(() => {
             localStorage.setItem('lastSubmissionTime', currentTime);
             phoneInput.disabled = true;
-            formText.innerText = 'Дякуємо. Ми Вам зателефонуємо як тільки зможемо ✨';
+            formText.innerText = 'Дякуємо, ми Вам зателефонуємо як тільки зможемо ✨';
             submitBtn.style.display = 'none';
         })
         .catch((error) => console.log('Sending form failed'));
