@@ -27,10 +27,6 @@ form.addEventListener('submit', e => {
     submitBtn = document.getElementById("submit-btn");
     submitBtn.setAttribute('disabled', true);
 
-    if (userEmailField?.value?.length > 30) {
-        return;
-    }
-
     fetch("/", {
         method: "POST",
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
