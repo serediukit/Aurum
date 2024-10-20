@@ -245,3 +245,8 @@ a {
     justify-content: center;
     max-width: 360px;
 }
+
+.anchor {
+    position: absolute;
+    transform: translateY(-50vh);
+}
