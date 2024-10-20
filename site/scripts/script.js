@@ -25,7 +25,7 @@ form.addEventListener('submit', e => {
     const formData = new FormData(form);
 
     submitBtn = document.getElementById("submit-btn");
-    submitBtn.setAttribute('disabled', true);
+    submitBtn.setAttribute('visible', false);
 
     fetch("/", {
         method: "POST",
@@ -33,10 +33,9 @@ form.addEventListener('submit', e => {
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            setTimeout(() => {
-                submitBtn.removeAttribute('disabled')
-                phoneInput.value = '';
-            }, 2000);
+            phoneInput.setAttribute('disabled', true);
+            formText = document.getElementById('form-text');
+            formText.value = 'Дякуємо. Ми Вам зателефонуємо як тільки зможемо ✨';
         })
         .catch((error) => console.log('Sending form failed'));
 })
