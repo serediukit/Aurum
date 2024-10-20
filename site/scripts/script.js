@@ -19,6 +19,16 @@ phoneInput.addEventListener('click', () => {
 });
 
 const phonePattern = /^\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/;
+let lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+let currentTime = new Date().getTime();
+const fiveMinutes = 5 * 60 * 1000;
+
+if (lastSubmissionTime && (currentTime - lastSubmissionTime) < fiveMinutes) {
+    disableForm();
+}
+
+let formText = document.getElementById('form-text');
+let submitBtn = document.getElementById("submit-btn");
 
 // Додаємо подію для очищення форми після відправки
 const form = document.getElementById('phone-form');
@@ -32,18 +42,22 @@ form.addEventListener('submit', e => {
         return;
     }
 
-    submitBtn = document.getElementById("submit-btn");
-
     fetch("/", {
         method: "POST",
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
+            localStorage.setItem('lastSubmissionTime', new Date().getTime());
             phoneInput.setAttribute('disabled', true);
-            let formText = document.getElementById('form-text');
             formText.innerText = 'Дякуємо. Ми Вам зателефонуємо як тільки зможемо ✨';
             submitBtn.style.display = 'none';
         })
         .catch((error) => console.log('Sending form failed'));
-})
+});
+
+function disableForm() {
+    phoneInput.disabled = true;
+    formText.innerText = 'Зачекайте 5 хвилин, щоб відправити ще раз. Дякуємо за розуміння ✨';
+    submitBtn.style.display = 'none';
+};
