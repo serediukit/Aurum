@@ -93,7 +93,7 @@
             Нд: вихідний
         </span>
         <p>
-            <a href="#contacts" class="aurum-button aurum-white aurum-padding-large aurum-large aurum-margin-top aurum-opacity aurum-hover-opacity-off">
+            <a href="#phone-form" class="aurum-button aurum-white aurum-padding-large aurum-large aurum-margin-top aurum-opacity aurum-hover-opacity-off">
                 Записатись на прийом
             </a>
         </p>
@@ -145,7 +145,7 @@
                 У діагностиці та лікуванні захворювань користуємось лише клінічними рекомендаціями та міжнародними протоколами, ефективність та результативність яких перевірена численними дослідженнями
             </p>
             <p>
-                <a href="#contacts" class="aurum-button aurum-black aurum-hover-gold" style="margin: 12px 0">
+                <a href="#phone-form" class="aurum-button aurum-black aurum-hover-gold" style="margin: 12px 0">
                     <i class="fa-regular fa-calendar-check"></i>
                     Записатись на прийом
                 </a>
@@ -188,7 +188,7 @@
                         <p class="aurum-opacity">Отоларинголог</p>
                         <p>
                             Лікар-отоларинголог дорослий та дитячий, лор-хірург. Володіє сучасними підходами діагностики та лікування хвороб лор-органів у дорослих та дітей. Більше 200 проведених
-                            оперативних втручань за 2023 рік. Лікар доказової медицини.
+                            оперативних втручань за 2023 та 2024 роки. Лікар доказової медицини.
                         </p>
                     </div>
                     <p class="aurum-button-bottom">
@@ -283,7 +283,7 @@
         </div>
     </div>
     <p>
-        <a href="#contacts" class="aurum-button aurum-black aurum-hover-gold" style="margin: 12px 0; font-size: 18px">
+        <a href="#phone-form" class="aurum-button aurum-black aurum-hover-gold" style="margin: 12px 0; font-size: 18px">
             <i class="fa-regular fa-calendar-check"></i>
             Записатись на прийом
         </a>
@@ -363,7 +363,7 @@
 </div>
 
 <!-- Contact Section -->
-<div class="aurum-container aurum-light-grey" style="padding:128px 16px" id="appointment">
+<div class="aurum-container aurum-light-grey" style="padding:128px 16px" id="contacts">
     <h3 class="aurum-center" style="font-weight: bold">КОНТАКИ</h3>
     <p class="aurum-center aurum-large">Очікуємо на Вас</p>
     <div class="aurum-row-padding aurum-center" id="contacts-list">
@@ -404,18 +404,17 @@
         </div>
     </div>
 
-    <!--        <form action="/action_page.php" target="_blank">-->
-    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Name" required name="Name"></p>-->
-    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Email" required name="Email"></p>-->
-    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Subject" required name="Subject"></p>-->
-    <!--            <p><input class="aurum-input aurum-border" type="text" placeholder="Message" required name="Message"></p>-->
-    <!--            <p>-->
-    <!--                <button class="aurum-button aurum-black" type="submit">-->
-    <!--                    <i class="fa fa-paper-plane"></i> SEND MESSAGE-->
-    <!--                </button>-->
-    <!--            </p>-->
-    <!--        </form>-->
-    <!--    </div>-->
+    <p class="aurum-center aurum-large" style="margin-top: 2em">
+        Просто залиште свій номер телфону і ми Вам самі зателефонуємо
+    </p>
+    <form id="phone-form" name="phone-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="phone-form">
+        <label for="phone"></label>
+        <input class="aurum-input aurum-border aurum-large" placeholder="Ваш номер телефону" type="tel" id="phone" name="phone" required>
+        <button class="aurum-button aurum-black aurum-large aurum-hover-gold" type="submit" id="submit-btn" style="margin-top: 0.5em">
+            <i class="fa fa-phone" style="margin-right: 0.5em"></i>Перетелефонуйте мені
+        </button>
+    </form>
 </div>
 
 <!-- Map Section -->
