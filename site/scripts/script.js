@@ -24,7 +24,8 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(form);
 
-    launchBtn.setAttribute('disabled', true)
+    submitBtn = getElementById("submit-btn");
+    submitBtn.setAttribute('disabled', true);
 
     if (userEmailField?.value?.length > 30) {
         return;
@@ -37,7 +38,7 @@ form.addEventListener('submit', e => {
     })
         .then(() => {
             setTimeout(() => {
-                // launchBtn.removeAttribute('disabled')
+                submitBtn.removeAttribute('disabled')
                 phoneInput.value = '';
             }, 2000);
         })
