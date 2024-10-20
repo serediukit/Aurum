@@ -17,11 +17,11 @@ const phoneInput = document.getElementById('phone');
 phoneInput.addEventListener('click', () => {
     phoneInput.value = '';
 });
-//
-// // Додаємо подію для очищення форми після відправки
-// const form = document.getElementById('phone-form');
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault(); // Запобігає перезавантаженню сторінки
-//     form.submit(); // Відправляє форму
-//     phoneInput.value = ''; // Очищає поле після відправки
-// });
+
+// Додаємо подію для очищення форми після відправки
+const form = document.getElementById('phone-form');
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Запобігає перезавантаженню сторінки
+    form.submit(); // Відправляє форму
+    phoneInput.value = ''; // Очищає поле після відправки
+});
