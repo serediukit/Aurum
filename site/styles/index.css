@@ -89,7 +89,13 @@ a {
     padding: 18px 0;
 }
 
-#about-list, #advertisement-list, #doctors-rows, #pricing-rows, #contacts-list {
+#advertisement-list, #doctors-rows, #pricing-rows, #contacts-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,6 +161,10 @@ a {
 
     .aurum-price-card {
         min-width: 44%;
+    }
+
+    #about-list {
+        align-items: stretch;
     }
 }
 
@@ -249,4 +259,11 @@ a {
 .anchor {
     position: absolute;
     transform: translateY(-50vh);
+}
+
+.aurum-footer-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

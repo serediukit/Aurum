@@ -10,8 +10,7 @@ function disableForm() {
 
 const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
 let currentTime = new Date().getTime();
-// const fiveMinutes = 5 * 60 * 1000;
-const fiveMinutes = 30 * 1000;
+const fiveMinutes = 5 * 60 * 1000;
 
 if (lastSubmissionTime && (currentTime - lastSubmissionTime) < fiveMinutes) {
     disableForm();
