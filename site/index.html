@@ -408,8 +408,9 @@
     <p class="aurum-center aurum-large" style="margin-top: 2em">
         Просто залиште свій номер телефону і ми Вам самі зателефонуємо
     </p>
-    <form id="phone-form" name="phone-form" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="success.html#form-anchor" netlify>
-        <input type="hidden" name="bot-field" value="phone-form">
+    <form id="phone-form" name="phone-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
+<!--        <form id="phone-form" name="phone-form" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="success.html#form-anchor" netlify>-->
+        <input type="hidden" name="bot-field">
         <label for="phone"></label>
         <input class="aurum-input aurum-border aurum-large" placeholder="Ваш номер телефону" type="tel" id="phone" name="phone" required>
         <button class="aurum-button aurum-black aurum-large aurum-hover-gold" type="submit" id="submit-btn" style="margin-top: 0.5em">
