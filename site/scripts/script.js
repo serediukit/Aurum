@@ -18,10 +18,28 @@ phoneInput.addEventListener('click', () => {
     phoneInput.value = '';
 });
 
-// // Додаємо подію для очищення форми після відправки
-// const form = document.getElementById('phone-form');
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault(); // Запобігає перезавантаженню сторінки
-//     form.submit(); // Відправляє форму
-//     phoneInput.value = ''; // Очищає поле після відправки
-// });
+// Додаємо подію для очищення форми після відправки
+const form = document.getElementById('phone-form');
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    launchBtn.setAttribute('disabled', true)
+
+    if (userEmailField?.value?.length > 30) {
+        return;
+    }
+
+    fetch("/", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: new URLSearchParams(formData).toString(),
+    })
+        .then(() => {
+            setTimeout(() => {
+                // launchBtn.removeAttribute('disabled')
+                phoneInput.value = '';
+            }, 2000);
+        })
+        .catch((error) => console.log('Sending form failed'));
+})
