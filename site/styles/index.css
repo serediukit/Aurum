@@ -267,3 +267,20 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.doctors-info-rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 601px) {
+    #doctors-info-rows {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+/*.aurum-doctor-image-profile {*/
+/*    max-width: 460px;*/
+/*}*/
