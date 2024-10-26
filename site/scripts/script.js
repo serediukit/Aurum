@@ -68,5 +68,8 @@ form.addEventListener('submit', e => {
             formText.innerText = 'Дякуємо, ми Вам зателефонуємо як тільки зможемо ✨';
             submitBtn.style.display = 'none';
         })
-        .catch((error) => console.log('Sending form failed'));
+        .catch((error) => {
+            alert("Перепрошуємо, номер не надіслано. Спробуйте, будь ласка, пізніше.");
+            console.log('Sending form failed');
+        });
 });
