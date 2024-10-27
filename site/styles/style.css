@@ -1,186 +1,1742 @@
-@import "./normalize.css";
-@import "./root.css";
-
 html {
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+audio, canvas, progress, video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-black);
+    background-color: transparent
 }
 
-header {
-    background: var(--gold-gradient);
+a:active, a:hover {
+    outline-width: 0
 }
 
-.header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    background-color: var(--color-white);
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
 }
 
-.header-logo {
-    width: var(--logo-size);
-    height: var(--logo-size);
+b, strong {
+    font-weight: bolder
 }
 
-.menu a {
-    font-size: 24px;
-    letter-spacing: 1.6px;
-    word-spacing: 6px;
-    color: var(--color-black);
-    font-weight: 700;
-    text-decoration: none;
-    font-style: normal;
-
-    margin-left: 30px;
-    padding: 10px;
-    border-radius: 15px;
+dfn {
+    font-style: italic
 }
 
-.menu a:hover {
-    background: var(--color-gold);
-    transition-duration: 500ms;
+mark {
+    background: #ff0;
+    color: #000
 }
 
-.menu-bordered {
-    border-style: solid;
-    border-color: var(--color-gold);
-    border-width: 2px;
+small {
+    font-size: 80%
 }
 
-.header-contacts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
 }
 
-.contacts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25px;
-    margin-right: 25px;
+sub {
+    bottom: -0.25em
 }
 
-i {
-    color: var(--color-black);
+sup {
+    top: -0.5em
 }
 
-.contact-info {
-    margin-left: 10px;
+figure {
+    margin: 1em 40px
 }
 
-.contact-main-info {
-    font-size: 16px;
-    letter-spacing: 1.6px;
+img {
+    border-style: none
 }
 
-.contact-sub-info {
-    font-size: 14px;
-    color: var(--color-gray);
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
 }
 
-.instagram-link {
-    text-decoration: none;
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button, input, select, textarea, optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
 }
 
 h1 {
-    color: var(--color-gold-dark);
-    font-size: 26px;
+    font-size: 36px
 }
 
 h2 {
-    color: var(--color-black);
-    font-size: 26px;
+    font-size: 30px
 }
 
 h3 {
-    color: var(--color-black);
-    font-size: 34px;
+    font-size: 24px
 }
 
-p {
-    color: var(--color-black);
-    font-size: 18px;
-    text-align: justify;
+h4 {
+    font-size: 20px
 }
 
-.gold-line {
-    height: 1vh;
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.aurum-serif {
+    font-family: serif
+}
+
+.aurum-sans-serif {
+    font-family: sans-serif
+}
+
+.aurum-cursive {
+    font-family: cursive
+}
+
+.aurum-monospace {
+    font-family: monospace
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.aurum-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.aurum-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.aurum-table, .aurum-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
-    background: var(--gold-gradient);
+    display: table
 }
 
-footer {
-    background: var(--gold-gradient);
+.aurum-table-all {
+    border: 1px solid #ccc
 }
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aurum-bordered tr, .aurum-table-all tr {
+    border-bottom: 1px solid #ddd
 }
 
-.footer-logo {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    height: var(--logo-size);
+.aurum-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
 }
 
-.footer-info {
-    display: flex;
+.aurum-table-all tr:nth-child(odd) {
+    background-color: #fff
 }
 
-.footer-column {
-    margin: 10px 0 10px 30px;
+.aurum-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
 }
 
-.footer-column-title {
-    font-size: 18px;
-    color: var(--color-black);
-    margin-bottom: 1vh;
+.aurum-hoverable tbody tr:hover, .aurum-ul.aurum-hoverable li:hover {
+    background-color: #ccc
 }
 
-.footer-column-cell {
-    font-size: 14px;
-    color: var(--color-brown);
-    margin-bottom: 0.5vh;
+.aurum-centered tr th, .aurum-centered tr td {
+    text-align: center
 }
 
-.silver-line {
-    height: 0.5vh;
-    width: 100%;
-    background: var(--silver-gradient);
+.aurum-table td, .aurum-table th, .aurum-table-all td, .aurum-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
 }
 
-.footer-copyright {
-    color: var(--color-brown);
-    text-align: center;
-    padding: 1vh 0;
+.aurum-table th:first-child, .aurum-table td:first-child, .aurum-table-all th:first-child, .aurum-table-all td:first-child {
+    padding-left: 16px
 }
 
-.main-info {
-    padding: 0 20%;
-}
-
-.max-lines {
-    display: block;/* or inline-block */
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+.aurum-btn, .aurum-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
     overflow: hidden;
-    max-height: 9em;
-    line-height: 1.8em;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.aurum-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.aurum-btn, .aurum-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.aurum-disabled, .aurum-btn:disabled, .aurum-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.aurum-disabled *, :disabled * {
+    pointer-events: none
+}
+
+.aurum-btn.aurum-disabled:hover, .aurum-btn:disabled:hover {
+    box-shadow: none
+}
+
+.aurum-badge, .aurum-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.aurum-badge {
+    border-radius: 50%
+}
+
+.aurum-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.aurum-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.aurum-ul li:last-child {
+    border-bottom: none
+}
+
+.aurum-tooltip, .aurum-display-container {
+    position: relative
+}
+
+.aurum-tooltip .aurum-text {
+    display: none
+}
+
+.aurum-tooltip:hover .aurum-text {
+    display: inline-block
+}
+
+.aurum-ripple:active {
+    opacity: 0.5
+}
+
+.aurum-ripple {
+    transition: opacity 0s
+}
+
+.aurum-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.aurum-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.aurum-dropdown-click, .aurum-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.aurum-dropdown-hover:hover .aurum-dropdown-content {
+    display: block
+}
+
+.aurum-dropdown-hover:first-child, .aurum-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.aurum-dropdown-hover:hover > .aurum-button:first-child, .aurum-dropdown-click:hover > .aurum-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.aurum-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.aurum-check, .aurum-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.aurum-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.aurum-bar-block .aurum-dropdown-hover, .aurum-bar-block .aurum-dropdown-click {
+    width: 100%
+}
+
+.aurum-bar-block .aurum-dropdown-hover .aurum-dropdown-content, .aurum-bar-block .aurum-dropdown-click .aurum-dropdown-content {
+    min-width: 100%
+}
+
+.aurum-bar-block .aurum-dropdown-hover .aurum-button, .aurum-bar-block .aurum-dropdown-click .aurum-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.aurum-main, #main {
+    transition: margin-left .4s
+}
+
+.aurum-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.aurum-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.aurum-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.aurum-center .aurum-bar {
+    display: inline-block;
+    width: auto
+}
+
+.aurum-bar .aurum-bar-item {
+    padding: 8px 16px;
+    font-size: 18px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.aurum-bar .aurum-dropdown-hover, .aurum-bar .aurum-dropdown-click {
+    position: static;
+    float: left
+}
+
+.aurum-bar .aurum-button {
+    white-space: normal
+}
+
+.aurum-bar-block .aurum-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.aurum-bar-block.aurum-center .aurum-bar-item {
+    text-align: center
+}
+
+.aurum-block {
+    display: block;
+    width: 100%
+}
+
+.aurum-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.aurum-container:after, .aurum-container:before, .aurum-panel:after, .aurum-panel:before, .aurum-row:after, .aurum-row:before, .aurum-row-padding:after, .aurum-row-padding:before,
+.aurum-cell-row:before, .aurum-cell-row:after, .aurum-clear:after, .aurum-clear:before, .aurum-bar:before, .aurum-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.aurum-col, .aurum-half, .aurum-third, .aurum-twothird, .aurum-threequarter, .aurum-quarter {
+    float: left;
+    width: 100%
+}
+
+.aurum-col.s1 {
+    width: 8.33333%
+}
+
+.aurum-col.s2 {
+    width: 16.66666%
+}
+
+.aurum-col.s3 {
+    width: 24.99999%
+}
+
+.aurum-col.s4 {
+    width: 33.33333%
+}
+
+.aurum-col.s5 {
+    width: 41.66666%
+}
+
+.aurum-col.s6 {
+    width: 49.99999%
+}
+
+.aurum-col.s7 {
+    width: 58.33333%
+}
+
+.aurum-col.s8 {
+    width: 66.66666%
+}
+
+.aurum-col.s9 {
+    width: 74.99999%
+}
+
+.aurum-col.s10 {
+    width: 83.33333%
+}
+
+.aurum-col.s11 {
+    width: 91.66666%
+}
+
+.aurum-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width: 601px) {
+    .aurum-col.m1 {
+        width: 8.33333%
+    }
+
+    .aurum-col.m2 {
+        width: 16.66666%
+    }
+
+    .aurum-col.m3, .aurum-quarter {
+        width: 24.99999%
+    }
+
+    .aurum-col.m4, .aurum-third {
+        width: 33.33333%
+    }
+
+    .aurum-col.m5 {
+        width: 41.66666%
+    }
+
+    .aurum-col.m6, .aurum-half {
+        width: 49.99999%
+    }
+
+    .aurum-col.m7 {
+        width: 58.33333%
+    }
+
+    .aurum-col.m8, .aurum-twothird {
+        width: 66.66666%
+    }
+
+    .aurum-col.m9, .aurum-threequarter {
+        width: 74.99999%
+    }
+
+    .aurum-col.m10 {
+        width: 83.33333%
+    }
+
+    .aurum-col.m11 {
+        width: 91.66666%
+    }
+
+    .aurum-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width: 993px) {
+    .aurum-col.l1 {
+        width: 8.33333%
+    }
+
+    .aurum-col.l2 {
+        width: 16.66666%
+    }
+
+    .aurum-col.l3 {
+        width: 24.99999%
+    }
+
+    .aurum-col.l4 {
+        width: 33.33333%
+    }
+
+    .aurum-col.l5 {
+        width: 41.66666%
+    }
+
+    .aurum-col.l6 {
+        width: 49.99999%
+    }
+
+    .aurum-col.l7 {
+        width: 58.33333%
+    }
+
+    .aurum-col.l8 {
+        width: 66.66666%
+    }
+
+    .aurum-col.l9 {
+        width: 74.99999%
+    }
+
+    .aurum-col.l10 {
+        width: 83.33333%
+    }
+
+    .aurum-col.l11 {
+        width: 91.66666%
+    }
+
+    .aurum-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.aurum-rest {
+    overflow: hidden
+}
+
+.aurum-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.aurum-content, .aurum-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.aurum-content {
+    max-width: 980px
+}
+
+.aurum-auto {
+    max-width: 1140px
+}
+
+.aurum-cell-row {
+    display: table;
+    width: 100%
+}
+
+.aurum-cell {
+    display: table-cell
+}
+
+.aurum-cell-top {
+    vertical-align: top
+}
+
+.aurum-cell-middle {
+    vertical-align: middle
+}
+
+.aurum-cell-bottom {
+    vertical-align: bottom
+}
+
+.aurum-hide {
+    display: none !important
+}
+
+.aurum-show-block, .aurum-show {
+    display: block !important
+}
+
+.aurum-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width: 1205px) {
+    .aurum-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width: 600px) {
+    .aurum-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .aurum-dropdown-hover.aurum-mobile .aurum-dropdown-content, .aurum-dropdown-click.aurum-mobile .aurum-dropdown-content {
+        position: relative
+    }
+
+    .aurum-hide-small {
+        display: none !important
+    }
+
+    .aurum-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .aurum-bar-item.aurum-mobile, .aurum-dropdown-hover.aurum-mobile, .aurum-dropdown-click.aurum-mobile {
+        text-align: center
+    }
+
+    .aurum-dropdown-hover.aurum-mobile, .aurum-dropdown-hover.aurum-mobile .aurum-btn, .aurum-dropdown-hover.aurum-mobile .aurum-button, .aurum-dropdown-click.aurum-mobile, .aurum-dropdown-click.aurum-mobile .aurum-btn, .aurum-dropdown-click.aurum-mobile .aurum-button {
+        width: 100%
+    }
+}
+
+@media (max-width: 768px) {
+    .aurum-modal-content {
+        width: 500px
+    }
+}
+
+@media (min-width: 993px) {
+    .aurum-modal-content {
+        width: 900px
+    }
+
+    .aurum-hide-large {
+        display: none !important
+    }
+
+    .aurum-sidebar.aurum-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+    .aurum-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width: 992px) {
+    .aurum-sidebar.aurum-collapse {
+        display: none
+    }
+
+    .aurum-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .aurum-auto {
+        max-width: 100%
+    }
+}
+
+.aurum-top, .aurum-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.aurum-top {
+    top: 0
+}
+
+.aurum-bottom {
+    bottom: 0
+}
+
+.aurum-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.aurum-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.aurum-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.aurum-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.aurum-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.aurum-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.aurum-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.aurum-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.aurum-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.aurum-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.aurum-display-container:hover .aurum-display-hover {
+    display: block
+}
+
+.aurum-display-container:hover span.aurum-display-hover {
+    display: inline-block
+}
+
+.aurum-display-hover {
+    display: none
+}
+
+.aurum-display-position {
+    position: absolute
+}
+
+.aurum-circle {
+    border-radius: 50%
+}
+
+.aurum-round-small {
+    border-radius: 2px
+}
+
+.aurum-round, .aurum-round-medium {
+    border-radius: 4px
+}
+
+.aurum-round-large {
+    border-radius: 8px
+}
+
+.aurum-round-xlarge {
+    border-radius: 16px
+}
+
+.aurum-round-xxlarge {
+    border-radius: 32px
+}
+
+.aurum-row-padding, .aurum-row-padding > .aurum-half, .aurum-row-padding > .aurum-third, .aurum-row-padding > .aurum-twothird, .aurum-row-padding > .aurum-threequarter, .aurum-row-padding > .aurum-quarter, .aurum-row-padding > .aurum-col {
+    padding: 0 8px
+}
+
+.aurum-container, .aurum-panel {
+    padding: 0.01em 16px
+}
+
+.aurum-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.aurum-code, .aurum-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.aurum-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.aurum-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.aurum-card, .aurum-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.aurum-card-4, .aurum-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.aurum-spin {
+    animation: aurum-spin 2s infinite linear
+}
+
+@keyframes aurum-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.aurum-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.aurum-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.aurum-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.aurum-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.aurum-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.aurum-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.aurum-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.aurum-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.aurum-animate-input:focus {
+    width: 100% !important
+}
+
+.aurum-opacity, .aurum-hover-opacity:hover {
+    opacity: 0.75
+}
+
+.aurum-opacity-off, .aurum-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.aurum-opacity-max {
+    opacity: 0.25
+}
+
+.aurum-opacity-min {
+    opacity: 0.75
+}
+
+.aurum-greyscale-max, .aurum-grayscale-max, .aurum-hover-greyscale:hover, .aurum-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.aurum-greyscale, .aurum-grayscale {
+    filter: grayscale(75%)
+}
+
+.aurum-greyscale-min, .aurum-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.aurum-sepia {
+    filter: sepia(75%)
+}
+
+.aurum-sepia-max, .aurum-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.aurum-sepia-min {
+    filter: sepia(50%)
+}
+
+.aurum-tiny {
+    font-size: 10px !important
+}
+
+.aurum-small {
+    font-size: 12px !important
+}
+
+.aurum-medium {
+    font-size: 15px !important
+}
+
+.aurum-large {
+    font-size: 18px !important
+}
+
+.aurum-xlarge {
+    font-size: 24px !important
+}
+
+.aurum-xxlarge {
+    font-size: 36px !important
+}
+
+.aurum-xxxlarge {
+    font-size: 48px !important
+}
+
+.aurum-jumbo {
+    font-size: 64px !important
+}
+
+.aurum-left-align {
+    text-align: left !important
+}
+
+.aurum-right-align {
+    text-align: right !important
+}
+
+.aurum-justify {
+    text-align: justify !important
+}
+
+.aurum-center {
+    text-align: center !important
+}
+
+.aurum-border-0 {
+    border: 0 !important
+}
+
+.aurum-border {
+    border: 1px solid #ccc !important
+}
+
+.aurum-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.aurum-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+.aurum-border-left {
+    border-left: 1px solid #ccc !important
+}
+
+.aurum-border-right {
+    border-right: 1px solid #ccc !important
+}
+
+.aurum-topbar {
+    border-top: 6px solid #ccc !important
+}
+
+.aurum-bottombar {
+    border-bottom: 6px solid #ccc !important
+}
+
+.aurum-leftbar {
+    border-left: 6px solid #ccc !important
+}
+
+.aurum-rightbar {
+    border-right: 6px solid #ccc !important
+}
+
+.aurum-section, .aurum-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.aurum-margin {
+    margin: 16px !important
+}
+
+.aurum-margin-top {
+    margin-top: 16px !important
+}
+
+.aurum-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.aurum-margin-left {
+    margin-left: 16px !important
+}
+
+.aurum-margin-right {
+    margin-right: 16px !important
+}
+
+.aurum-padding-small {
+    padding: 4px 8px !important
+}
+
+.aurum-padding {
+    padding: 8px 16px !important
+}
+
+.aurum-padding-large {
+    padding: 12px 24px !important
+}
+
+.aurum-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.aurum-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+}
+
+.aurum-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.aurum-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+}
+
+.aurum-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.aurum-padding-top-64 {
+    padding-top: 64px !important
+}
+
+.aurum-padding-top-48 {
+    padding-top: 48px !important
+}
+
+.aurum-padding-top-32 {
+    padding-top: 32px !important
+}
+
+.aurum-padding-top-24 {
+    padding-top: 24px !important
+}
+
+.aurum-left {
+    float: left !important
+}
+
+.aurum-right {
+    float: right !important
+}
+
+.aurum-transparent, .aurum-hover-none:hover {
+    background-color: transparent !important
+}
+
+.aurum-hover-none:hover {
+    box-shadow: none !important
+}
+
+/* Colors */
+.aurum-amber, .aurum-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+}
+
+.aurum-aqua, .aurum-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+}
+
+.aurum-blue, .aurum-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+}
+
+.aurum-light-blue, .aurum-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+}
+
+.aurum-brown, .aurum-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+}
+
+.aurum-cyan, .aurum-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+}
+
+.aurum-blue-grey, .aurum-hover-blue-grey:hover, .aurum-blue-gray, .aurum-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+}
+
+.aurum-green, .aurum-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+}
+
+.aurum-light-green, .aurum-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+}
+
+.aurum-indigo, .aurum-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+}
+
+.aurum-khaki, .aurum-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+}
+
+.aurum-lime, .aurum-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+}
+
+.aurum-orange, .aurum-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+.aurum-deep-orange, .aurum-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+}
+
+.aurum-pink, .aurum-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+}
+
+.aurum-purple, .aurum-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+}
+
+.aurum-deep-purple, .aurum-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+}
+
+.aurum-red, .aurum-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.aurum-sand, .aurum-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+}
+
+.aurum-teal, .aurum-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+}
+
+.aurum-yellow, .aurum-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.aurum-white, .aurum-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.aurum-black, .aurum-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.aurum-grey, .aurum-hover-grey:hover, .aurum-gray, .aurum-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}
+
+.aurum-light-grey, .aurum-hover-light-grey:hover, .aurum-light-gray, .aurum-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.aurum-dark-grey, .aurum-hover-dark-grey:hover, .aurum-dark-gray, .aurum-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+}
+
+.aurum-pale-red, .aurum-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+}
+
+.aurum-pale-green, .aurum-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+}
+
+.aurum-pale-yellow, .aurum-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+}
+
+.aurum-pale-blue, .aurum-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
+
+.aurum-text-amber, .aurum-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.aurum-text-aqua, .aurum-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.aurum-text-blue, .aurum-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.aurum-text-light-blue, .aurum-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.aurum-text-brown, .aurum-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.aurum-text-cyan, .aurum-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.aurum-text-blue-grey, .aurum-hover-text-blue-grey:hover, .aurum-text-blue-gray, .aurum-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.aurum-text-green, .aurum-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.aurum-text-light-green, .aurum-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.aurum-text-indigo, .aurum-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.aurum-text-khaki, .aurum-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.aurum-text-lime, .aurum-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.aurum-text-orange, .aurum-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.aurum-text-deep-orange, .aurum-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.aurum-text-pink, .aurum-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.aurum-text-purple, .aurum-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.aurum-text-deep-purple, .aurum-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.aurum-text-red, .aurum-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.aurum-text-sand, .aurum-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.aurum-text-teal, .aurum-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.aurum-text-yellow, .aurum-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.aurum-text-white, .aurum-hover-text-white:hover {
+    color: #fff !important
+}
+
+.aurum-text-black, .aurum-hover-text-black:hover {
+    color: #000 !important
+}
+
+.aurum-text-grey, .aurum-hover-text-grey:hover, .aurum-text-gray, .aurum-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.aurum-text-light-grey, .aurum-hover-text-light-grey:hover, .aurum-text-light-gray, .aurum-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+}
+
+.aurum-text-dark-grey, .aurum-hover-text-dark-grey:hover, .aurum-text-dark-gray, .aurum-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.aurum-border-amber, .aurum-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.aurum-border-aqua, .aurum-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.aurum-border-blue, .aurum-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.aurum-border-light-blue, .aurum-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.aurum-border-brown, .aurum-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.aurum-border-cyan, .aurum-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.aurum-border-blue-grey, .aurum-hover-border-blue-grey:hover, .aurum-border-blue-gray, .aurum-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.aurum-border-green, .aurum-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.aurum-border-light-green, .aurum-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.aurum-border-indigo, .aurum-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.aurum-border-khaki, .aurum-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.aurum-border-lime, .aurum-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.aurum-border-orange, .aurum-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.aurum-border-deep-orange, .aurum-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.aurum-border-pink, .aurum-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.aurum-border-purple, .aurum-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.aurum-border-deep-purple, .aurum-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.aurum-border-red, .aurum-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.aurum-border-sand, .aurum-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.aurum-border-teal, .aurum-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.aurum-border-yellow, .aurum-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.aurum-border-white, .aurum-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.aurum-border-black, .aurum-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.aurum-border-grey, .aurum-hover-border-grey:hover, .aurum-border-gray, .aurum-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.aurum-border-light-grey, .aurum-hover-border-light-grey:hover, .aurum-border-light-gray, .aurum-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.aurum-border-dark-grey, .aurum-hover-border-dark-grey:hover, .aurum-border-dark-gray, .aurum-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.aurum-border-pale-red, .aurum-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.aurum-border-pale-green, .aurum-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.aurum-border-pale-yellow, .aurum-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.aurum-border-pale-blue, .aurum-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
 }
