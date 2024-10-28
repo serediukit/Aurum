@@ -31,7 +31,7 @@ a {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/main-photo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/main-photo.jpg");
     min-height: 100%;
 }
 
